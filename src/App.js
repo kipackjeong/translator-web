@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import Main from './components/Main'
+import Results from './components/Results'
+import useTranslator from './hooks/useTranslator'
 
 function App() {
+  const {
+    onInputChange,
+    onFormSubmit,
+    onSelectionChange,
+    updateTranslation,
+    setTranslatedText,
+    setTransliteratedText,
+    isLoading,
+    userInput,
+    fromLanguage,
+    translatedText,
+    transliteratedText,
+  } = useTranslator()
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Main
+        userInput={userInput}
+        onInputChange={onInputChange}
+        onFormSubmit={onFormSubmit}
+        onSelectionChange={onSelectionChange}
+        updateTranslation={updateTranslation}
+        setTranslatedText={setTranslatedText}
+        setTransliteratedText={setTransliteratedText}
+        listeningLanguage={fromLanguage}
+      />
+      <Results
+        isLoading={isLoading}
+        translatedText={translatedText}
+        transliteratedText={transliteratedText}
+      />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

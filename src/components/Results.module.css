@@ -1,0 +1,23 @@
+.results {
+  width: 100%;
+  height: 40%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.results__container {
+  width: 50%;
+  height: 30%;
+  color: white;
+  font-size: large;
+  font-weight: 600;
+}
+.results__container img {
+  height: 9rem;
+}
+.results__container p {
+  font-size: x-large;
+}
