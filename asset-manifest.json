@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/translator-web/static/css/main.42a5561a.chunk.css",
+    "main.js": "/translator-web/static/js/main.a6ced24d.chunk.js",
+    "main.js.map": "/translator-web/static/js/main.a6ced24d.chunk.js.map",
+    "runtime-main.js": "/translator-web/static/js/runtime-main.7eb53a73.js",
+    "runtime-main.js.map": "/translator-web/static/js/runtime-main.7eb53a73.js.map",
+    "static/js/2.e41cc323.chunk.js": "/translator-web/static/js/2.e41cc323.chunk.js",
+    "static/js/2.e41cc323.chunk.js.map": "/translator-web/static/js/2.e41cc323.chunk.js.map",
+    "static/js/3.637fc871.chunk.js": "/translator-web/static/js/3.637fc871.chunk.js",
+    "static/js/3.637fc871.chunk.js.map": "/translator-web/static/js/3.637fc871.chunk.js.map",
+    "index.html": "/translator-web/index.html",
+    "static/css/main.42a5561a.chunk.css.map": "/translator-web/static/css/main.42a5561a.chunk.css.map",
+    "static/js/2.e41cc323.chunk.js.LICENSE.txt": "/translator-web/static/js/2.e41cc323.chunk.js.LICENSE.txt",
+    "static/media/basicloader.157f21ba.gif": "/translator-web/static/media/basicloader.157f21ba.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7eb53a73.js",
+    "static/js/2.e41cc323.chunk.js",
+    "static/css/main.42a5561a.chunk.css",
+    "static/js/main.a6ced24d.chunk.js"
+  ]
+}
