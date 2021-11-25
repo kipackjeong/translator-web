@@ -1,6 +1,7 @@
 import Select from 'react-select'
+import arrowIcon from '../images/white-arrow.ico'
 
-const LangSelection = ({ onSelectionChange }) => {
+const LangSelection = ({ onSelectionChange, styles }) => {
   const options = [
     { value: 'ko', label: 'Korean' },
     { value: 'en', label: 'English' },
@@ -17,18 +18,19 @@ const LangSelection = ({ onSelectionChange }) => {
   }
 
   return (
-    <>
+    <div className={styles['lang-selection']}>
       <Select
         onChange={onFromSelectionChangeHandler}
         options={options}
         defaultValue={options[0]}
       />
+      <img src={arrowIcon} alt="white-arrow" />
       <Select
         onChange={onToSelectionChangeHandler}
         options={options}
         defaultValue={options[1]}
       />
-    </>
+    </div>
   )
 }
 

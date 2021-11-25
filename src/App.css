@@ -2,11 +2,16 @@ body {
   background-color: #282c34;
 }
 #root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 .App {
   text-align: center;
   width: 100vw;
-  height: 100vh;
+  height: 70%;
+  margin: auto;
 }
 .main {
   width: 100%;

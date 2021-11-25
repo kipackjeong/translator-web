@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from 'react'
-import MicButton from './MicButton'
-import SpeechRecognition, {
-  useSpeechRecognition,
-} from 'react-speech-recognition'
+import React from 'react'
+
 import LangSelection from './LangSelection'
-import styles from './Main.module.css'
+import InputForm from './InputForm'
+
 import useMic from '../hooks/useMic'
-import useTranslator from '../hooks/useTranslator'
+
+import styles from './Main.module.css'
+import titleImg from '../images/title.png'
 const Main = ({
   userInput,
   onInputChange,
@@ -34,31 +34,21 @@ const Main = ({
 
   return (
     <div className={styles.main}>
-      <LangSelection onSelectionChange={onSelectionChange} />
-      <form onSubmit={onFormSubmit}>
-        <input
-          id="text-input"
-          type="text"
-          name="input"
-          value={isMicOn ? transcript : userInput}
-          onChange={onInputChange}
-        ></input>
-        <br />
-        <div className={styles['btn-container']}>
-          <button
-            className={`btn btn-light ${styles['translate-btn']}`}
-            type="submit"
-          >
-            translate
-          </button>
-          <MicButton
-            onMicClick={onMicClickHandler}
-            resetTranscript={resetTranscript}
-            listening={listening}
-            browserSupportsSpeechRecognition={browserSupportsSpeechRecognition}
-          />
-        </div>
-      </form>
+      <img className={styles['title-img']} src={titleImg} alt="title" />
+
+      <LangSelection onSelectionChange={onSelectionChange} styles={styles} />
+      <InputForm
+        onFormSubmit={onFormSubmit}
+        onInputChange={onInputChange}
+        onMicClickHandler={onMicClickHandler}
+        resetTranscript={resetTranscript}
+        userInput={userInput}
+        transcript={transcript}
+        isMicOn={isMicOn}
+        listening={listening}
+        browserSupportsSpeechRecognition={browserSupportsSpeechRecognition}
+        styles={styles}
+      ></InputForm>
     </div>
   )
 }
