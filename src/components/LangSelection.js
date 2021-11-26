@@ -20,12 +20,14 @@ const LangSelection = ({ onSelectionChange, styles }) => {
   return (
     <div className={styles['lang-selection']}>
       <Select
+        className={styles.select}
         onChange={onFromSelectionChangeHandler}
         options={options}
         defaultValue={options[0]}
       />
       <img src={arrowIcon} alt="white-arrow" />
       <Select
+        className={styles.select}
         onChange={onToSelectionChangeHandler}
         options={options}
         defaultValue={options[1]}

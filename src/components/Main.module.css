@@ -18,7 +18,7 @@
   align-items: center;
 }
 
-.main form input {
+.main form textarea {
   width: 40rem;
   margin: 0 10px;
 
@@ -32,7 +32,7 @@
   background-color: #383e4a;
 }
 
-.main form input:focus {
+.main form textarea:focus {
   outline: none;
 }
 
@@ -60,4 +60,27 @@
 
 .lang-selection img {
   height: 2rem;
+}
+.select {
+  width: 35%;
+}
+@media only screen and (max-width: 728px) {
+  .main form textarea {
+    width: 90%;
+    height: 10rem;
+    font-size: larger;
+  }
+
+  .title-img {
+    width: 19rem;
+    margin-bottom: 3rem;
+  }
+  .lang-selection {
+    width: 100%;
+    margin: 1rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }

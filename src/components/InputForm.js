@@ -15,13 +15,15 @@ const InputForm = ({
 }) => {
   return (
     <form onSubmit={onFormSubmit}>
-      <input
+      <textarea
         id="text-input"
         type="text"
         name="input"
         value={isMicOn ? transcript : userInput}
         onChange={onInputChange}
-      ></input>
+        rows="4"
+        cols="50"
+      ></textarea>
       <br />
       <div className={styles['btn-container']}>
         <button
