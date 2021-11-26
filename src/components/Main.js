@@ -34,8 +34,6 @@ const Main = ({
 
   return (
     <div className={styles.main}>
-      <img className={styles['title-img']} src={titleImg} alt="title" />
-
       <LangSelection onSelectionChange={onSelectionChange} styles={styles} />
       <InputForm
         onFormSubmit={onFormSubmit}

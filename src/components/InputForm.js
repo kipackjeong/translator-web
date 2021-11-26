@@ -1,6 +1,6 @@
 import React from 'react'
 import MicButton from './MicButton'
-
+import translateIcon from '../images/translate-icon.ico'
 const InputForm = ({
   onFormSubmit,
   onInputChange,
@@ -24,19 +24,17 @@ const InputForm = ({
         rows="4"
         cols="50"
       ></textarea>
-      <br />
+
       <div className={styles['btn-container']}>
-        <button
-          className={`btn btn-light ${styles['translate-btn']}`}
-          type="submit"
-        >
-          translate
+        <button className={styles.btn} type="submit">
+          <img src={translateIcon} alt="translate-icon" />
         </button>
         <MicButton
           onMicClick={onMicClickHandler}
           resetTranscript={resetTranscript}
           listening={listening}
           browserSupportsSpeechRecognition={browserSupportsSpeechRecognition}
+          styles={styles}
         />
       </div>
     </form>

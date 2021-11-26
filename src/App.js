@@ -1,7 +1,9 @@
-import './App.css'
 import Main from './components/Main'
 import Results from './components/Results'
 import useTranslator from './hooks/useTranslator'
+
+import titleImg from './images/title.png'
+import styles from './App.module.css'
 
 function App() {
   const {
@@ -19,7 +21,8 @@ function App() {
   } = useTranslator()
 
   return (
-    <div className="App">
+    <div className={styles.App}>
+      <img className={styles['title-img']} src={titleImg} alt="title" />
       <Main
         userInput={userInput}
         onInputChange={onInputChange}
