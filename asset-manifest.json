@@ -1,25 +1,27 @@
 {
   "files": {
-    "main.css": "/translator-web/static/css/main.18b5af4f.chunk.css",
-    "main.js": "/translator-web/static/js/main.d23e3e24.chunk.js",
-    "main.js.map": "/translator-web/static/js/main.d23e3e24.chunk.js.map",
+    "main.css": "/translator-web/static/css/main.d9f53f6a.chunk.css",
+    "main.js": "/translator-web/static/js/main.9452775e.chunk.js",
+    "main.js.map": "/translator-web/static/js/main.9452775e.chunk.js.map",
     "runtime-main.js": "/translator-web/static/js/runtime-main.7eb53a73.js",
     "runtime-main.js.map": "/translator-web/static/js/runtime-main.7eb53a73.js.map",
-    "static/js/2.65bba9b6.chunk.js": "/translator-web/static/js/2.65bba9b6.chunk.js",
-    "static/js/2.65bba9b6.chunk.js.map": "/translator-web/static/js/2.65bba9b6.chunk.js.map",
+    "static/js/2.25434de8.chunk.js": "/translator-web/static/js/2.25434de8.chunk.js",
+    "static/js/2.25434de8.chunk.js.map": "/translator-web/static/js/2.25434de8.chunk.js.map",
     "static/js/3.637fc871.chunk.js": "/translator-web/static/js/3.637fc871.chunk.js",
     "static/js/3.637fc871.chunk.js.map": "/translator-web/static/js/3.637fc871.chunk.js.map",
     "index.html": "/translator-web/index.html",
-    "static/css/main.18b5af4f.chunk.css.map": "/translator-web/static/css/main.18b5af4f.chunk.css.map",
-    "static/js/2.65bba9b6.chunk.js.LICENSE.txt": "/translator-web/static/js/2.65bba9b6.chunk.js.LICENSE.txt",
+    "static/css/main.d9f53f6a.chunk.css.map": "/translator-web/static/css/main.d9f53f6a.chunk.css.map",
+    "static/js/2.25434de8.chunk.js.LICENSE.txt": "/translator-web/static/js/2.25434de8.chunk.js.LICENSE.txt",
     "static/media/basicloader.5dd6d913.gif": "/translator-web/static/media/basicloader.5dd6d913.gif",
+    "static/media/mic-icon.a8db719a.ico": "/translator-web/static/media/mic-icon.a8db719a.ico",
     "static/media/title.edd73a80.png": "/translator-web/static/media/title.edd73a80.png",
+    "static/media/translate-icon.ec0a44b2.ico": "/translator-web/static/media/translate-icon.ec0a44b2.ico",
     "static/media/white-arrow.ecf0da65.ico": "/translator-web/static/media/white-arrow.ecf0da65.ico"
   },
   "entrypoints": [
     "static/js/runtime-main.7eb53a73.js",
-    "static/js/2.65bba9b6.chunk.js",
-    "static/css/main.18b5af4f.chunk.css",
-    "static/js/main.d23e3e24.chunk.js"
+    "static/js/2.25434de8.chunk.js",
+    "static/css/main.d9f53f6a.chunk.css",
+    "static/js/main.9452775e.chunk.js"
   ]
 }
