@@ -1,10 +1,13 @@
 import axios from 'axios'
+const API_KEY = process.env.REACT_APP_API_KEY
+const API_URL = 'https://microsoft-translator-text.p.rapidapi.com/'
+
 
 class TranslatorAPI {
   static async translate(userInput, tolanguage) {
     const options = {
       method: 'POST',
-      url: 'https://microsoft-translator-text.p.rapidapi.com/translate',
+      url: API_URL + 'translate',
       params: {
         to: tolanguage,
         'api-version': '3.0',
@@ -14,7 +17,7 @@ class TranslatorAPI {
       headers: {
         'content-type': 'application/json',
         'x-rapidapi-host': 'microsoft-translator-text.p.rapidapi.com',
-        'x-rapidapi-key': 'bb7c540eafmsh899ae8ebf5b34fbp14f87bjsn2c5edbb60724',
+        'x-rapidapi-key': API_KEY,
       },
       data: [{ Text: userInput }],
     }
@@ -40,7 +43,7 @@ class TranslatorAPI {
       console.log('X')
       var options = {
         method: 'POST',
-        url: 'https://microsoft-translator-text.p.rapidapi.com/transliterate',
+        url: API_URL + 'transliterate',
         params: {
           'api-version': '3.0',
           toScript: langScripts[fromLanguage],
@@ -51,7 +54,7 @@ class TranslatorAPI {
           'content-type': 'application/json',
           'x-rapidapi-host': 'microsoft-translator-text.p.rapidapi.com',
           'x-rapidapi-key':
-            'bb7c540eafmsh899ae8ebf5b34fbp14f87bjsn2c5edbb60724',
+            API_KEY,
         },
         data: [{ Text: text }],
       }
@@ -59,19 +62,6 @@ class TranslatorAPI {
       const result = (await axios.request(options)).data[0].text
       return result
     }
-  }
-
-  static breakSentence(userInput) {
-    this.options.data = [
-      { Text: 'How are you? I am fine. What did you do today?' },
-    ]
-    axios
-      .then(function (response) {
-        return response.data
-      })
-      .catch(function (error) {
-        console.error(error)
-      })
   }
 }
 
